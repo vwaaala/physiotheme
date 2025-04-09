@@ -32,651 +32,1041 @@
     <link rel="stylesheet" href="assets/css/all.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <!-- Topbar start -->
-    <div id="topbar" class="topbar d-flex flex-column flex-md-row justify-content-between d-none">
-        <div class="topbar-item">
-            <i class="fas fa-clock"></i> Saturday - Friday, 9AM to 8PM
-        </div>
-        <div class="topbar-item">
-            <a href="tel:+8801623005005"><i class="fas fa-phone"></i> Call us now +880 1623 005005</a>
-        </div>
-    </div>
-    <!-- Topbar end -->
+    
     <!-- Navbar start -->
-    <nav class="navbar navbar-skin navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" alt="Logo" width="115" height="65" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbarToggler"
-                aria-controls="topNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="nav-item-container collapse navbar-collapse" id="topNavbarToggler">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="service.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Case Studies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="offcanvas" href="#appointmentOffcanvas" role="button"
-                            aria-controls="appointmentOffcanvas">
-                            Appointment
-                        </a>
-                    </li>
-                </ul>
+    <!-- <section class="navbar-section">
+      <nav class="navbar navbar-skin navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="Logo" width="115" height="65" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbarToggler"
+                    aria-controls="topNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-item-container collapse navbar-collapse" id="topNavbarToggler">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#appointmentOffcanvas" role="button"
+                                aria-controls="appointmentOffcanvas">
+                                Appointment
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section> -->
+
+
+    <nav class="floating-navbar">
+        <div class="navbar-container">
+            <div class="logo"><img src="assets/img/logo.png" alt="Logo" width="115" height="65" class="d-inline-block align-text-top"></div>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-links desktop-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+            </ul>
+
+            <!-- Mobile Menu (Hidden by Default) -->
+            <ul class="nav-links mobile-menu">
+                <li><a href="#patients">For Patients</a></li>
+                <li><a href="#doctors">For Doctors</a></li>
+                <li class="mobile-menu-separator"></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="social-section">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                </li>
+                <li class="close-menu">✕</li> <!-- Close Button -->
+            </ul>
+
+            <!-- CTA Button (Desktop Only) -->
+            <a href="#book-now" class="cta-button">Book Now</a>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
+    
+    
+
+
+    
     <!-- Navbar end -->
     <!-- Carousel start -->
-    <div id="carouselMain" class="carousel slide mb-3">
-        <!-- Carousel indicator -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section class="hero-slider">
+        <div id="slickSlider" class="slider">
+            <div>
+                <img src="assets/img/slider/slider01.jpg" alt="First slide">
+            </div>
+            <div>
+                <img src="assets/img/slider/slider02.jpg" alt="Second slide">
+            </div>
+            <div>
+                <img src="assets/img/slider/slider03.jpg" alt="Third slide">
+            </div>
+            <div>
+                <img src="assets/img/slider/slider04.jpg" alt="Fourth slide">
+            </div>
+            <div>
+                <img src="assets/img/slider/slider05.jpg" alt="Fifth slide">
+            </div>
+            <div>
+                <img src="assets/img/slider/slider06.jpg" alt="Sixth slide">
+            </div>
         </div>
-        <!-- Carousel inner -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/slider/slider01.jpg" class="d-block w-100" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="intro-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Welcome to Dr. Care</h1>
+                    <p>Your trusted partner in health and wellness.</p>
+                    <a href="#book-now" class="cta-button">Book Appointment</a>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/slider/slider02.jpg" class="d-block w-100" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/slider/slider03.jpg" class="d-block w-100" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/slider/slider04.jpg" class="d-block w-100" alt="Fourth slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Fourth slide label</h5>
-                    <p>Some representative placeholder content for the fourth slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/slider/slider05.jpg" class="d-block w-100" alt="Fifth slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Fifth slide label</h5>
-                    <p>Some representative placeholder content for the fifth slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/slider/slider06.jpg" class="d-block w-100" alt="Sixth slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Sixth slide label</h5>
-                    <p>Some representative placeholder content for the sixth slide.</p>
+                <div class="doctor-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/img/doctor/doctors01.jpg" alt="Doctor">
                 </div>
             </div>
         </div>
-        <!-- Carousel controller -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+        <div class="wave-clip"></div> <!-- Wavy clipping shape -->
+    </section>
+    
     <!-- Carousel end -->
     <!-- Service start -->
-    <div class="container mb-3">
-        <div class="section-header p-3 pb-md-4 mx-auto text-center">
-            <h2 class="display-4 fw-normal text-body-emphasis">Services</h2>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <div id="service-list" class="list-group service-list">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    <section class="service-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-4 fw-normal text-body-emphasis">Our Comprehensive Medical Services</h2>
+                <p class="fs-5 text-body-secondary">Experience our state-of-the-art medical care with personalized treatment plans</p>
+            </div>
+            
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/img/services/sports-medicine.jpg" alt="Sports Medicine" class="img-fluid rounded">
+                        </div>
+                        <div class="service-content p-4">
+                            <h3 class="h4 mb-3">Sports Medicine</h3>
+                            <p class="mb-4">Advanced treatment for athletes and active individuals, including injury prevention, treatment, and performance optimization.</p>
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-running"></i>
+                                    <span>Performance Optimization</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Injury Prevention</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Quick Recovery</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/img/services/cardiovascular.jpg" alt="Cardiovascular Care" class="img-fluid rounded">
+                        </div>
+                        <div class="service-content p-4">
+                            <h3 class="h4 mb-3">Cardiovascular Care</h3>
+                            <p class="mb-4">Comprehensive heart health services including preventive care, diagnostic testing, and specialized treatments.</p>
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Heart Health</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-stethoscope"></i>
+                                    <span>Advanced Diagnostics</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Preventive Care</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/img/services/neurology.jpg" alt="Neurological Treatment" class="img-fluid rounded">
+                        </div>
+                        <div class="service-content p-4">
+                            <h3 class="h4 mb-3">Neurological Treatment</h3>
+                            <p class="mb-4">Expert care for neurological disorders, including stroke rehabilitation, Parkinson's disease management, and multiple sclerosis treatment.</p>
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Neurological Care</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-wheelchair"></i>
+                                    <span>Rehabilitation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-user-md"></i>
+                                    <span>Specialized Care</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Service 4 -->
+                <div class="col-md-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/img/services/pediatric.jpg" alt="Pediatric Care" class="img-fluid rounded">
+                        </div>
+                        <div class="service-content p-4">
+                            <h3 class="h4 mb-3">Pediatric Care</h3>
+                            <p class="mb-4">Comprehensive medical care for children, including preventive care, vaccinations, and specialized pediatric treatments.</p>
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-child"></i>
+                                    <span>Child Care</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-syringe"></i>
+                                    <span>Vaccinations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Wellness Programs</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/img/services/orthopedic.jpg" alt="Orthopedic Care" class="img-fluid rounded">
+                        </div>
+                        <div class="service-content p-4">
+                            <h3 class="h4 mb-3">Orthopedic Care</h3>
+                            <p class="mb-4">Specialized treatment for musculoskeletal injuries and conditions, including joint replacement and fracture care.</p>
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-bone"></i>
+                                    <span>Joint Care</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-procedures"></i>
+                                    <span>Surgical Expertise</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-hands-helping"></i>
+                                    <span>Rehabilitation</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-4">
+                    <div class="service-item h-100">
+                        <div class="service-image">
+                            <img src="assets/img/services/respiratory.jpg" alt="Respiratory Care" class="img-fluid rounded">
+                        </div>
+                        <div class="service-content p-4">
+                            <h3 class="h4 mb-3">Respiratory Care</h3>
+                            <p class="mb-4">Advanced treatment for respiratory conditions, including asthma management and pulmonary rehabilitation.</p>
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-lungs"></i>
+                                    <span>Lung Health</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-stethoscope"></i>
+                                    <span>Diagnostic Care</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-running"></i>
+                                    <span>Rehab Programs</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-8">
-                <div class="scrollspy-example mini-service" data-bs-spy="scroll" data-bs-target="#service-list"
-                    data-bs-smooth-scroll="true" tabindex="0">
-                    <h4 id="list-item-1">Item 1</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-                        sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                        generators on the Internet tend to repeat predefined chunks as necessary, making this the
-                        first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-                        with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-                        non-characteristic words etc.</p>
-                    <h4 id="list-item-2">Item 2</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-                        sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                        generators on the Internet tend to repeat predefined chunks as necessary, making this the
-                        first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-                        with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-                        non-characteristic words etc.</p>
-                    <h4 id="list-item-3">Item 3</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-                        sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                        generators on the Internet tend to repeat predefined chunks as necessary, making this the
-                        first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-                        with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-                        non-characteristic words etc.</p>
-                    <h4 id="list-item-4">Item 4</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-                        sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                        generators on the Internet tend to repeat predefined chunks as necessary, making this the
-                        first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-                        with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-                        non-characteristic words etc.</p>
-                </div>
-            </div>
         </div>
-    </div>
+    </section>
     <!-- Service end -->
     <!-- Appointment start -->
-    <div class="container mb-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">Appointment</h1>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#appointmentOffcanvas" aria-controls="appointmentOffcanvas">
-                Schedule Now!
-            </button>
-        </div>
-    </div>
+
+
+
+    <section class="cta-section">
+        <h1 class="cta-title">Connect with Trusted Doctors Today</h1>
+        <p class="cta-description">Your journey to better health starts here. Find specialists, schedule visits, and manage appointments - all in one place.</p>
+        <button class="cta-button" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#appointmentOffcanvas" aria-controls="appointmentOffcanvas">Book Your Appointment</button>
+      </section>
+
+
     <!-- Appointment end -->
     <!-- Doctors start -->
-    <div class="container mb-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">Doctors</h1>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
+    <section class="doctors-section">
+        <div class="container mb-3">
+            <div class="p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis">Doctors</h1>
+                <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
+                    customers with this
+                    Bootstrap example. It's built with default Bootstrap components and utilities with little
+                    customization.</p>
+            </div>
+            <div class="row doctors-card">
+                <!-- Doctor card -->
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/doctor/doctors01.jpg" class="card-img-top" alt="Doctor 1">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Md Jahiruddin Alamgir</h5>
+                            <p class="card-text">Some quick example text </p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/doctor/doctors02.jpg" class="card-img-top" alt="Doctor 2">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Sharon Ginger</h5>
+                            <p class="card-text">Some quick example text </p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/doctor/doctors03.jpg" class="card-img-top" alt="Doctor 3">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Md Jahiruddin Alamgir</h5>
+                            <p class="card-text">Some quick example text </p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/doctor/doctors04.jpg" class="card-img-top" alt="Doctor 4">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Kamrunnahar Akter</h5>
+                            <p class="card-text">Some quick example text </p>
+                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <!-- Doctor card -->
-            <div class="col-3">
-                <div class="card">
-                    <img src="assets/img/doctor/doctors01.jpg" class="card-img-top" alt="Doctor 1">
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Doctor 1</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="assets/img/doctor/doctors02.jpg" class="card-img-top" alt="Doctor 2">
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Doctor 2</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="assets/img/doctor/doctors03.jpg" class="card-img-top" alt="Doctor 3">
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Doctor 3</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="assets/img/doctor/doctors04.jpg" class="card-img-top" alt="Doctor 4">
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Doctor 4</h5>
-                        <p class="card-text">Some quick example text </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
+    
     <!-- Doctors end -->
-    <!-- Pricing start -->
-    <div class="container mb-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
+
+     <!-- Pricing start -->
+     <section class="pricing-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Find Your Perfect Care Plan</h2>
+                <p class="lead">Choose the package that best fits your health journey and lifestyle</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Basic Package -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-animate">
+                        <div class="card-body text-center">
+                            <div class="package-icon mb-4">
+                                <i class="fas fa-heartbeat fa-3x text-primary"></i>
+                            </div>
+                            <h3 class="card-title mb-4">Essential Care</h3>
+                            <div class="price mb-4">
+                                <span class="currency">$</span>
+                                <span class="amount">49</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Initial Health Assessment</li>
+                                <li><i class="fas fa-check text-success me-2"></i>2 Weekly Sessions</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Custom Exercise Guide</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Email Support</li>
+                                <li><i class="fas fa-times text-danger me-2"></i>Advanced Features</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Start Your Journey</button>
+                            <div class="package-benefit text-muted mt-3">
+                                <small>Perfect for beginners and occasional therapy</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-animate featured">
+                        <div class="card-body text-center">
+                            <div class="package-icon mb-4">
+                                <i class="fas fa-star fa-3x text-warning"></i>
+                            </div>
+                            <div class="featured-badge">Most Popular</div>
+                            <h3 class="card-title mb-4">Premium Care</h3>
+                            <div class="price mb-4">
+                                <span class="currency">$</span>
+                                <span class="amount">89</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Comprehensive Assessment</li>
+                                <li><i class="fas fa-check text-success me-2"></i>4 Weekly Sessions</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Personalized Treatment Plan</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Priority Support</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Full App Access</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Choose This Plan</button>
+                            <div class="package-benefit text-muted mt-3">
+                                <small>Ideal for regular therapy and recovery</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elite Package -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-animate">
+                        <div class="card-body text-center">
+                            <div class="package-icon mb-4">
+                                <i class="fas fa-crown fa-3x text-danger"></i>
+                            </div>
+                            <h3 class="card-title mb-4">Elite Care</h3>
+                            <div class="price mb-4">
+                                <span class="currency">$</span>
+                                <span class="amount">149</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Advanced Assessment</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Daily Sessions</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Custom Treatment Program</li>
+                                <li><i class="fas fa-check text-success me-2"></i>24/7 Support</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Premium App Features</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Contact Us</button>
+                            <div class="package-benefit text-muted mt-3">
+                                <small>Perfect for intensive care and rehabilitation</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Free</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$0<small
-                                class="text-body-secondary fw-light">/mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>10 users included</li>
-                            <li>2 GB of storage</li>
-                            <li>Email support</li>
-                            <li>Help center access</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Pro</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$15<small
-                                class="text-body-secondary fw-light">/mo</small>
-                        </h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                    <div class="card-header py-3 text-bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">Enterprise</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$29<small
-                                class="text-body-secondary fw-light">/mo</small>
-                        </h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>30 users included</li>
-                            <li>15 GB of storage</li>
-                            <li>Phone and email support</li>
-                            <li>Help center access</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     <!-- Pricing end -->
-    <!-- Case studies start -->
-    <div class="container mb-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">Case Studies</h1>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
+
+    <!-- Testimonial start -->
+    <section class="testimonial-section py-5">
+        <div class="testimonial-bg-overlay">
+
         </div>
-        <div class="row">
-            <!-- Case card -->
-            <div class="col-4">
-                <div class="card">
-                    <img src="assets/img/case/cases01.jpg" class="card-img-top" alt="Doctor 1">
-                    <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                    <h5 class="card-title">Survical Injuries</h5>
-                    <a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
-                        Read more
-                    </a>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="lead">Real stories from real people who have experienced our care</p>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"The physiotherapy sessions have been life-changing. The team's expertise and personalized approach helped me recover faster than I ever thought possible. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/doctor/doctors03.jpg" alt="Patient 1" class="testimonial-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <span class="author-position">Marketing Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"I was skeptical about physiotherapy, but the results were amazing. The team's professionalism and care made all the difference in my recovery journey."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/doctor/doctors01.jpg" alt="Patient 2" class="testimonial-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Thompson</h4>
+                                <span class="author-position">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"The attention to detail and personalized treatment plan made all the difference. I'm now pain-free and back to my active lifestyle thanks to this amazing team."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/doctors02.jpg" alt="Patient 3" class="testimonial-avatar">
+                            <div class="author-info">
+                                <h4 class="author-name">Emily Wilson</h4>
+                                <span class="author-position">Fitness Instructor</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="assets/img/case/cases10.jpg" class="card-img-top" alt="Doctor 1">
-                    <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                    <h5 class="card-title">Lorel ipsum</h5>
-                    <a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
-                        Read more
-                    </a>
+
+            
+        </div>
+
+        <div class="curved-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none">
+                <path 
+                    fill="var(--accent-bg)" 
+                    fill-opacity="1" 
+                    d="M0,0 C0,0 0,100 720,100 C1440,100 1440,0 1440,0 V200 H0 Z"
+                ></path>
+            </svg>
+        </div>
+    </section>
+    <!-- Testimonial end -->
+
+    <div class="section-divider-animated"></div>
+
+
+
+
+
+    
+            <!-- Getting Started Section Start -->
+            <section class="getting-started-section py-5" id="getting-started">
+                <div class="container">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-4 fw-normal text-body-emphasis">Your Journey to Recovery</h2>
+                        <p class="fs-5 text-body-secondary">Follow these simple steps to begin your path to better health with us.</p>
+                    </div>
+        
+                    <div class="row g-4 justify-content-center">
+        
+                        <!-- Step 1 Card -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card h-100 shadow-sm border-0 process-step-card text-center">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="step-number mx-auto">1</div>
+                                    <div class="step-icon my-3">
+                                        <i class="fas fa-calendar-check fa-3x"></i>
+                                    </div>
+                                    <h5 class="card-title step-title mt-2 mb-3">Book Your Visit</h5>
+                                    <p class="card-text step-description flex-grow-1">Easily schedule your initial consultation online, by phone, or through our appointment form.</p>
+                                    <!-- Optional Link: <a href="#appointments" class="btn btn-sm btn-outline-primary mt-auto">Book Now</a> -->
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Step 2 Card -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card h-100 shadow-sm border-0 process-step-card text-center">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="step-number mx-auto">2</div>
+                                    <div class="step-icon my-3">
+                                        <i class="fas fa-clipboard-list fa-3x"></i>
+                                    </div>
+                                    <h5 class="card-title step-title mt-2 mb-3">Initial Assessment</h5>
+                                    <p class="card-text step-description flex-grow-1">Our expert physiotherapists conduct a thorough evaluation to understand your condition and goals.</p>
+                                     <!-- Optional Link: <a href="#services" class="btn btn-sm btn-outline-primary mt-auto">Our Services</a> -->
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Step 3 Card -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card h-100 shadow-sm border-0 process-step-card text-center">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="step-number mx-auto">3</div>
+                                    <div class="step-icon my-3">
+                                        <i class="fas fa-map-signs fa-3x"></i>
+                                    </div>
+                                    <h5 class="card-title step-title mt-2 mb-3">Personalized Plan</h5>
+                                    <p class="card-text step-description flex-grow-1">We design a custom treatment roadmap tailored specifically to accelerate your recovery.</p>
+                                     <!-- Optional Link: <a href="#about" class="btn btn-sm btn-outline-primary mt-auto">Our Approach</a> -->
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Step 4 Card -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card h-100 shadow-sm border-0 process-step-card text-center">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="step-number mx-auto">4</div>
+                                    <div class="step-icon my-3">
+                                        <i class="fas fa-dumbbell fa-3x"></i> <!-- Or fa-running, fa-heartbeat -->
+                                    </div>
+                                    <h5 class="card-title step-title mt-2 mb-3">Begin Therapy</h5>
+                                    <p class="card-text step-description flex-grow-1">Start your guided sessions using evidence-based techniques, exercises, and modalities.</p>
+                                     <!-- Optional Link: <a href="#pricing" class="btn btn-sm btn-outline-primary mt-auto">View Plans</a> -->
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div> <!-- / .row -->
+                </div> <!-- / .container -->
+            </section>
+            <!-- Getting Started Section End -->
+        
+        
+        
+        
+        
+                <!-- Myth vs Fact Section Start -->
+                <section class="myth-fact-section py-5" id="myths-facts">
+                    <div class="container">
+                        <div class="text-center mb-5" data-aos="fade-up">
+                            <h2 class="display-4 fw-normal text-body-emphasis">Physiotherapy: Myths vs. Facts</h2>
+                            <p class="fs-5 text-body-secondary">Let's clear up some common misconceptions about physiotherapy.</p>
+                        </div>
+            
+                        <!-- Myth/Fact Pair 1 -->
+                        <div class="row g-4 mb-4 align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                            <div class="col-lg-6 d-flex">
+                                <div class="card myth-card h-100 w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title myth-title">
+                                            <i class="fas fa-times-circle me-2"></i>Myth: Physiotherapy is Always Painful
+                                        </h5>
+                                        <p class="card-text myth-text">Many people avoid physiotherapy fearing it will hurt. They believe 'no pain, no gain' applies universally.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex">
+                                <div class="card fact-card h-100 w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title fact-title">
+                                            <i class="fas fa-check-circle me-2"></i>Fact: Focus is on Healing, Not Hurting
+                                        </h5>
+                                        <p class="card-text fact-text">While some discomfort can occur, our goal is pain reduction. Treatments are tailored to your tolerance, focusing on gentle movement and gradual progression to promote healing comfortably.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Myth/Fact Pair 2 -->
+                        <div class="row g-4 mb-4 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-6 d-flex">
+                                <div class="card myth-card h-100 w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title myth-title">
+                                            <i class="fas fa-times-circle me-2"></i>Myth: I Need a Doctor's Referral
+                                        </h5>
+                                        <p class="card-text myth-text">It's often assumed that you must see a doctor first to get referred for physiotherapy treatment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex">
+                                <div class="card fact-card h-100 w-100">
+                                    <div class="card-body">
+                                         <h5 class="card-title fact-title">
+                                            <i class="fas fa-check-circle me-2"></i>Fact: Direct Access May Be Possible
+                                        </h5>
+                                        <p class="card-text fact-text">In many regions, you can directly book an appointment with a physiotherapist (Direct Access). We can help verify if your insurance or location requires a referral.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Myth/Fact Pair 3 -->
+                        <div class="row g-4 mb-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                             <div class="col-lg-6 d-flex">
+                                <div class="card myth-card h-100 w-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title myth-title">
+                                            <i class="fas fa-times-circle me-2"></i>Myth: Physiotherapy is Only for Injuries
+                                        </h5>
+                                         <p class="card-text myth-text">Some believe physiotherapy is solely for recovering from sports injuries or accidents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex">
+                                 <div class="card fact-card h-100 w-100">
+                                    <div class="card-body">
+                                         <h5 class="card-title fact-title">
+                                            <i class="fas fa-check-circle me-2"></i>Fact: It Addresses a Wide Range of Issues
+                                        </h5>
+                                        <p class="card-text fact-text">Physiotherapy helps manage chronic pain, improve mobility, recover post-surgery, address neurological conditions, prevent injuries, and enhance overall physical function.</p>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+            
+                        <!-- Myth/Fact Pair 4 (Optional - Add more as needed) -->
+                        <div class="row g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                             <div class="col-lg-6 d-flex">
+                                 <div class="card myth-card h-100 w-100">
+                                     <div class="card-body">
+                                        <h5 class="card-title myth-title">
+                                             <i class="fas fa-times-circle me-2"></i>Myth: I Can Just Use Online Videos
+                                        </h5>
+                                        <p class="card-text myth-text">With so many exercise videos online, people think they can self-treat effectively without professional guidance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex">
+                                <div class="card fact-card h-100 w-100">
+                                    <div class="card-body">
+                                         <h5 class="card-title fact-title">
+                                             <i class="fas fa-check-circle me-2"></i>Fact: Personalized Assessment is Key
+                                        </h5>
+                                        <p class="card-text fact-text">A physiotherapist provides an accurate diagnosis, creates a tailored plan, ensures correct technique, monitors progress, and adjusts treatment – things generic videos can't offer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+            
+                    </div> <!-- / .container -->
+                </section>
+                <!-- Myth vs Fact Section End -->
+
+
+
+
+
+    <!-- Newsletter Section Start -->
+    <section class="newsletter-section py-5">
+        <div class="newsletter-bg-shape"></div> <!-- Decorative shape -->
+       <div class="container position-relative">
+           <div class="row justify-content-center">
+               <div class="col-lg-8 col-md-10 text-center" data-aos="fade-up">
+                   <div class="newsletter-icon mb-3">
+                       <i class="fas fa-envelope-open-text"></i>
+                   </div>
+                   <h2 class="newsletter-title mb-3">Stay Updated With Us</h2>
+                   <p class="newsletter-description mb-4">Subscribe to our newsletter for the latest news, updates, and special offers delivered straight to your inbox.</p>
+                   <form class="newsletter-form">
+                       <div class="input-group">
+                           <input type="email" class="form-control form-control-lg" placeholder="Enter your email address" aria-label="Email Address" required>
+                           <button class="btn btn-primary btn-lg newsletter-btn" type="submit">
+                               Subscribe <i class="fas fa-arrow-right ms-1"></i>
+                           </button>
+                       </div>
+                   </form>
+                   <small class="text-muted mt-2 d-block">We respect your privacy. No spam.</small>
+               </div>
+           </div>
+       </div>
+   </section>
+   <!-- Newsletter Section End -->
+
+
+
+        <!-- Contact Section Start -->
+        <section class="contact-section-redesigned py-5" id="contact">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-normal text-body-emphasis">Get In Touch</h2>
+                    <p class="fs-5 text-body-secondary">Have questions or ready to start your journey? Reach out to us!</p>
                 </div>
+    
+                <div class="row g-4 align-items-stretch">
+                    <!-- Contact Info Column -->
+                    <div class="col-lg-5 d-flex" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-info-wrapper p-4 p-md-5 rounded-3 shadow-sm w-100 d-flex flex-column justify-content-center">
+                            <h3 class="mb-4">Contact Information</h3>
+                            <div class="info-item d-flex align-items-start mb-3">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                                </div>
+                                <div>
+                                    <h5>Address</h5>
+                                    <p>31/35A Doctor para (opposite of Khulna Medical college hospital), Khulna, 9100</p>
+                                </div>
+                            </div>
+                            <div class="info-item d-flex align-items-start mb-3">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-phone-alt fa-fw"></i>
+                                </div>
+                                <div>
+                                    <h5>Call Us</h5>
+                                    <p><a href="tel:+8801623005005" class="text-decoration-none contact-link">+880 1623 005005</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item d-flex align-items-start mb-4">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                </div>
+                                <div>
+                                    <h5>Email Us</h5>
+                                    <p><a href="mailto:contact@physiopoint.com" class="text-decoration-none contact-link">contact@physiopoint.com</a></p>
+                                </div>
+                            </div>
+                             <div class="info-item d-flex align-items-start">
+                                <div class="info-icon me-3">
+                                    <i class="fas fa-clock fa-fw"></i>
+                                </div>
+                                <div>
+                                    <h5>Opening Hours</h5>
+                                    <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Contact Form Column -->
+                    <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                        <div class="contact-form-wrapper p-4 p-md-5 rounded-3 shadow-sm h-100">
+                            <h3 class="mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="contactNameInput" placeholder="Your Name">
+                                            <label for="contactNameInput">Full Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="contactEmailInput" placeholder="name@example.com">
+                                            <label for="contactEmailInput">Email address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" class="form-control" id="contactPhoneInput" placeholder="Phone Number">
+                                            <label for="contactPhoneInput">Phone Number (Optional)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                         <div class="form-floating mb-3">
+                                            <select class="form-select" id="contactSubjectSelect" aria-label="Subject Selection">
+                                                <option selected disabled>Select a Subject...</option>
+                                                <option value="General Inquiry">General Inquiry</option>
+                                                <option value="Appointment Request">Appointment Request</option>
+                                                <option value="Service Question">Service Question</option>
+                                                <option value="Feedback">Feedback</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <label for="contactSubjectSelect">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave your message here" id="contactMessageTextarea" style="height: 120px"></textarea>
+                                            <label for="contactMessageTextarea">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn btn-primary btn-lg contact-submit-btn">
+                                            Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                 <!-- Map Row (Optional - Add below the info/form row if desired) -->
+                 <div class="row mt-5">
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                         <div class="map-container rounded-3 overflow-hidden shadow-sm">
+                             <!-- Replace with your actual Google Maps embed code or use a static image as before -->
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.700994401084!2d89.5414768154008!3d22.813746885059096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901288c88e6d%3A0x2f8a201d87d3a01!2sKhulna%20Medical%20College%20Hospital!5e0!3m2!1sen!2sbd!4v1678886000000!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                             <!-- Or use the static image placeholder -->
+                             <!-- <a href="https://www.google.com/maps/place/Khulna+Medical+College+Hospital" target="_blank" rel="noopener noreferrer">
+                                 <img src="assets/img/map-placeholder.png" alt="Map Location" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+                             </a> -->
+                         </div>
+                     </div>
+                 </div>
+    
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="assets/img/case/cases09.jpg" class="card-img-top" alt="Doctor 1">
-                    <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                    <h5 class="card-title">Avoid drugs</h5>
-                    <a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
-                        Read more
+        </section>
+        <!-- Contact Section End -->
+
+
+
+
+
+
+<!-- Footer Start -->
+<footer class="creative-footer">
+
+    <!-- Layer 1: Primary Call to Action -->
+    <div class="footer-cta-layer">
+        <div class="container text-center">
+            <h2 class="footer-cta-headline" data-aos="fade-up">Ready to Take the First Step Towards Recovery?</h2>
+            <p class="footer-cta-subline" data-aos="fade-up" data-aos-delay="100">Let's discuss how we can help you achieve your health goals.</p>
+            <a href="#contact" class="btn btn-primary btn-lg footer-cta-button" data-aos="fade-up" data-aos-delay="200">
+                Let's Talk <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Layer 2: Core Info & Social -->
+    <div class="footer-core-layer">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <!-- Logo -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <img src="assets/img/logo.png" alt="Physiopoint Logo" class="footer-core-logo">
+                </div>
+                <!-- Contact Snippets -->
+                <div class="col-lg-6 footer-core-contact text-center">
+                    <a href="tel:+8801623005005" class="contact-link me-4">
+                        <i class="fas fa-phone-alt me-1"></i> +880 1623 005005
                     </a>
+                    <a href="mailto:contact@physiopoint.com" class="contact-link">
+                        <i class="fas fa-envelope me-1"></i> contact@physiopoint.com
+                    </a>
+                     <div class="mt-2 address-snippet"> <!-- Added Address Snippet -->
+                         <i class="fas fa-map-marker-alt me-1"></i> 31/35A Doctor para, Khulna
+                     </div>
+                </div>
+                <!-- Social Icons -->
+                <div class="col-lg-3 footer-core-social text-center text-lg-end">
+                    <a href="#" aria-label="Twitter" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Case studies end -->
-    <!-- Contact start -->
-    <div class="container mb-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">Contact</h1>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
-        </div>
-        <div class="d-flex justify-content-evenly py-4 py-md-5 px-4 px-md-3 shadow-lg rounded-3 mb-3">
-            <!-- Address Section -->
-            <div class="mb-3">
-                <h5>Our Address</h5>
-                <p>31/35A Doctor para (opposite of Khulna Medical college hospital), Khulna, 9100</p>
-            </div>
 
-            <!-- Call Email Section -->
-            <div>
-                <h5>Call / Email</h5>
-                <p>
-                    <a href="tel:+8801623005005">+880 1623 005005</a><br>
-                    <a href="mailto:contact@physiopoint.com">contact@physiopoint.com</a>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="map-placeholder">
-                    <!-- Static Google Map -->
-                    <a href="https://www.google.com/maps/place/Dhaka" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/img/map-placeholder.png" alt="Dhaka Map"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </a>
+    <!-- Layer 3: Consolidated Links & Copyright -->
+    <div class="footer-bottom-layer">
+        <div class="container">
+            <div class="row align-items-center gy-2">
+                <!-- Copyright -->
+                <div class="col-lg-5 text-center text-lg-start">
+                     <p class="copyright-text mb-0">© <span id="creative-year"></span> Physiopoint. All Rights Reserved.</p>
                 </div>
-
-            </div>
-            <div class="col-sm-6">
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="contactname" placeholder="John Doe">
-                        <label for="contactname">Full name</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="contactphone" placeholder="8801623005005">
-                        <label for="contactphone">Phone number</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="contactemail"
-                            placeholder="35/c Doctor para, Boyra, Khulna-9100">
-                        <label for="contactemail">Email address</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="contactsub" aria-label="Floating label select example">
-                            <option selected disabled>Select from below</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <label for="contactsub">Subject</label>
-                    </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="contactbody"
-                            style="height: 100px"></textarea>
-                        <label for="contactbody">Tell us more about it</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Contact end -->
-    <!-- FAQ start -->
-    <div class="container mb-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
-            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential
-                customers with this
-                Bootstrap example. It's built with default Bootstrap components and utilities with little
-                customization.</p>
-        </div>
-        <div class="accordion">
-            <!-- FAQ 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What is your service availability?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Our services are available 24/7 to provide you with continuous support and care.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How can I contact customer support?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        You can contact our support team via email or phone at any time.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Do you provide home delivery services?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, we provide home delivery services for certain products and locations.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        What payment methods do you accept?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        We accept payments via credit cards, mobile banking, and cash on delivery.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 5 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Is there a return policy for products?
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, products can be returned within 7 days if they meet the return criteria.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 6 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Do you have physical stores?
-                    </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, we have physical stores in selected locations across the country.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 7 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        How do I track my orders?
-                    </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        You can track your orders through the tracking link sent to your email or in your account
-                        dashboard.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 8 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        What is your refund policy?
-                    </button>
-                </h2>
-                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Refunds are processed within 5-7 business days if all conditions are met.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 9 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingNine">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        Are there any discounts available?
-                    </button>
-                </h2>
-                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, we offer seasonal discounts and special promotions. Check our website for updates.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 10 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        Can I schedule an appointment?
-                    </button>
-                </h2>
-                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, you can schedule an appointment through our website or by contacting us directly.
-                    </div>
+                <!-- Consolidated Links -->
+                <div class="col-lg-7 text-center text-lg-end footer-bottom-links">
+                    <!-- Grouping links concisely -->
+                    <a href="about.html">About</a>
+                    <span class="link-separator">|</span>
+                    <a href="service.html">Services</a>
+                    <span class="link-separator">|</span>
+                     <a href="pricing.html">Pricing</a>
+                    <span class="link-separator">|</span>
+                    <a href="privacy.html">Privacy</a>
+                    <span class="link-separator">|</span>
+                    <a href="terms.html">Terms</a>
+                     <span class="link-separator">|</span>
+                     <a href="faq.html">FAQ</a> <!-- Link to FAQ page if available -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- FAQ end -->
-    <!-- Floating Buttons start -->
-    <div class="floating-buttons">
-        <!-- Settings Button -->
-        <button class="btn btn-secondary rounded-circle shadow" data-bs-toggle="offcanvas"
-            data-bs-target="#settingsOffcanvas" aria-controls="settingsOffcanvas" title="Settings">
-            <i class="bi bi-gear"></i>
-        </button><!-- Scroll to Top Button -->
-        <button class="btn btn-primary rounded-circle shadow" id="scrollToTop" title="Go to top">
-            <i class="bi bi-arrow-up"></i>
-        </button>
-    </div>
-    <!-- Floating Buttons end -->
+
+</footer>
+<!-- Footer End -->
+
+
+
+
+   
+   
     <!-- Appoingment offcanvas start -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="appointmentOffcanvas"
         aria-labelledby="offcanvasExampleLabel">
@@ -714,69 +1104,21 @@
         </div>
     </div>
     <!-- Settings offcanvas end -->
-    <!-- Footer start -->
-    <footer class="container-fluid border-top shadow">
-        <div class="container py-4 py-md-5 px-4 px-md-3">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2" src="assets/img/logo.png" alt="Logo" width="115" height="65">
-                    <p>
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    </p>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <br>
-                    <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Features</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="index.html">Home</a></li>
-                        <li class="mb-1">
-                            <a class="link-secondary text-decoration-none" href="#">Doctors</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="link-secondary text-decoration-none" href="service.html">Services</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="link-secondary text-decoration-none" href="pricing.html">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="faq.html">FAQ</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="contact.html">Contact</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="blog.html">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>About</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="about.html">About Us</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="privacy.html">Privacy</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="terms.html">Terms &
-                                Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer end -->
+   
+   
+   
+   
+   
+   
+   
     <!-- JS -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/scrollspy.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
