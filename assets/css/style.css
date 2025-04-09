@@ -16,9 +16,23 @@
  */
 
 /* 01. Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap'); */
+
+/* 01. Font Imports - Option 1 */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');  */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');  */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
 
 /* 02. Color Variables */
 :root {
@@ -34,9 +48,18 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
-  --heading-font: 'Crimson Text', serif;
+  /* --heading-font: 'Crimson Text', serif;
   --body-font: 'Newsreader', serif;
-  --accent-font: 'Vollkorn', serif;
+  --accent-font: 'Vollkorn', serif; */
+  /* --heading-font: 'Playfair Display', serif;
+  --body-font: 'Inter', sans-serif;
+  --accent-font: 'Montserrat', sans-serif; */
+  /* --heading-font: 'Lato', sans-serif;
+  --body-font: 'Lora', serif;
+  --accent-font: 'Quicksand', sans-serif; */
+  --heading-font: 'Raleway', sans-serif;
+  --body-font: 'Nunito Sans', sans-serif;
+  --accent-font: 'Josefin Sans', sans-serif;
 }
 
 /* 03. Typography */
